@@ -1,0 +1,15 @@
+certifi==2025.1.31
+charset-normalizer==3.4.1
+git-filter-repo==2.47.0
+greenlet==3.1.1
+idna==3.10
+iniconfig==2.0.0
+numpy==2.2.3
+packaging==24.2
+playwright==1.50.0
+pluggy==1.5.0
+pyee==12.1.1
+pytest==8.3.5
+requests==2.32.3
+typing_extensions==4.12.2
+urllib3==2.3.0
