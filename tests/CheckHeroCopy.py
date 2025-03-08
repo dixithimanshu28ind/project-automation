@@ -2,7 +2,7 @@ from playwright.sync_api import sync_playwright
 
 def test_homepage():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)  # Set headless=True for CI
+        browser = p.chromium.launch(headless=False)  # Set headless=True for CI
         page = browser.new_page()
         page.goto("http://localhost:5173")
 
