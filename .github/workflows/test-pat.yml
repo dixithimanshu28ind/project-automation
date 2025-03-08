@@ -1,0 +1,14 @@
+name: Test PAT Authentication
+
+on: workflow_dispatch  # Manual trigger
+
+jobs:
+  test-pat:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Test PAT authentication
+        run: |
+          curl -H "Authorization: token ${{ secrets.GH_PAT }}" https://api.github.com/user/repos
